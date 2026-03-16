@@ -20,7 +20,6 @@
   font-family:'DM Sans',sans-serif;
 }
 body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
-
 .topbar{background:var(--surface);border-bottom:1px solid var(--border);padding:0 2rem;display:flex;align-items:center;justify-content:space-between;height:60px;position:sticky;top:0;z-index:100}
 .logo{display:flex;align-items:center;gap:10px}
 .logo-mark{width:32px;height:32px;background:var(--blue);border-radius:8px;display:flex;align-items:center;justify-content:center}
@@ -30,32 +29,25 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
 .mode-toggle{display:flex;background:var(--gray-light);border-radius:8px;padding:3px;gap:2px}
 .mode-btn{font-size:12px;font-weight:500;padding:5px 14px;border-radius:6px;border:none;background:transparent;color:var(--text-sec);cursor:pointer;transition:all .15s;font-family:'DM Sans',sans-serif}
 .mode-btn.active{background:var(--surface);color:var(--blue);box-shadow:0 1px 3px rgba(0,0,0,.08)}
-
 .page{max-width:780px;margin:0 auto;padding:2rem 1.5rem 4rem}
-
 .hero{margin-bottom:2rem}
 .hero-label{font-size:11px;font-weight:500;color:var(--blue);text-transform:uppercase;letter-spacing:1px;font-family:'DM Mono',monospace;margin-bottom:6px}
 .hero-title{font-size:24px;font-weight:600;color:var(--text);letter-spacing:-.5px;line-height:1.2}
 .hero-meta{font-size:13px;color:var(--text-sec);margin-top:4px}
-
 .metrics{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-bottom:2rem}
 .metric-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:14px 16px}
 .metric-label{font-size:11px;color:var(--text-hint);font-family:'DM Mono',monospace;text-transform:uppercase;letter-spacing:.5px;margin-bottom:6px}
 .metric-value{font-size:22px;font-weight:600;color:var(--text);letter-spacing:-.5px}
 .metric-sub{font-size:12px;color:var(--text-sec);margin-top:2px}
-
 .progress-wrap{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;margin-bottom:2rem}
 .progress-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:10px}
 .progress-head span{font-size:13px;font-weight:500;color:var(--text)}
 .progress-pct{font-size:13px;font-weight:600;color:var(--blue);font-family:'DM Mono',monospace}
 .track{height:8px;background:var(--gray-light);border-radius:99px;overflow:hidden}
 .fill{height:100%;background:linear-gradient(90deg,var(--blue-mid),var(--teal));border-radius:99px;transition:width .5s cubic-bezier(.4,0,.2,1)}
-
-.alert{display:none;background:var(--amber-light);border:1px solid #FAC775;border-radius:var(--radius);padding:10px 14px;font-size:13px;color:var(--amber);margin-bottom:1.25rem;display:flex;align-items:center;gap:8px}
+.alert{background:var(--amber-light);border:1px solid #FAC775;border-radius:var(--radius);padding:10px 14px;font-size:13px;color:var(--amber);margin-bottom:1.25rem;align-items:center;gap:8px}
 .alert-dot{width:6px;height:6px;border-radius:50%;background:var(--amber);flex-shrink:0}
-
 .stages{display:flex;flex-direction:column;gap:8px}
-
 .stage-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius-lg);overflow:hidden;transition:box-shadow .15s}
 .stage-card:hover{box-shadow:0 2px 12px rgba(0,0,0,.06)}
 .stage-header{display:flex;align-items:center;gap:12px;padding:14px 16px;cursor:pointer;user-select:none}
@@ -65,27 +57,20 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
 .stage-date{font-size:12px;color:var(--text-hint);margin-top:1px;font-family:'DM Mono',monospace}
 .badge{font-size:11px;font-weight:500;padding:3px 10px;border-radius:99px;white-space:nowrap;flex-shrink:0}
 .chev{font-size:11px;color:var(--text-hint);transition:transform .2s;flex-shrink:0;margin-left:4px}
-
 .stage-body{max-height:0;overflow:hidden;transition:max-height .35s cubic-bezier(.4,0,.2,1)}
 .stage-body.open{max-height:800px}
 .stage-inner{padding:0 16px 16px;border-top:1px solid var(--border)}
-
 .section-label{font-size:11px;font-weight:500;color:var(--text-hint);text-transform:uppercase;letter-spacing:.6px;font-family:'DM Mono',monospace;margin:14px 0 8px}
-
 .task-row{display:flex;align-items:center;gap:8px;padding:8px 10px;border:1px solid var(--border);border-radius:8px;margin-bottom:5px;background:var(--bg)}
 .task-dot{width:7px;height:7px;border-radius:50%;flex-shrink:0}
 .task-name{flex:1;font-size:13px;color:var(--text)}
-.task-select{font-size:12px;padding:3px 7px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-family:'DM Sans',sans-serif;display:none}
 .task-badge{font-size:11px;padding:2px 8px;border-radius:99px}
-
 .doc-row{display:flex;align-items:center;gap:8px;padding:7px 0;border-bottom:1px solid var(--border);font-size:13px}
 .doc-row:last-child{border-bottom:none}
 .doc-icon{flex-shrink:0;color:var(--text-hint)}
 .doc-name{flex:1;color:var(--text)}
 .doc-select{font-size:12px;padding:3px 7px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-family:'DM Sans',sans-serif}
-
 .note-box{background:var(--blue-light);border-radius:8px;padding:10px 12px;font-size:13px;color:var(--blue);line-height:1.6;margin-top:12px;border-left:3px solid var(--blue-mid)}
-
 .add-btn{width:100%;margin-top:6px;padding:7px;border:1px dashed var(--border);border-radius:8px;background:transparent;color:var(--text-hint);font-size:12px;cursor:pointer;font-family:'DM Sans',sans-serif;transition:all .15s}
 .add-btn:hover{background:var(--gray-light);color:var(--text-sec)}
 .inline-add{display:none;gap:6px;margin-top:6px}
@@ -93,7 +78,6 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
 .inline-add input{flex:1;padding:7px 10px;border:1px solid var(--border);border-radius:8px;font-size:13px;background:var(--surface);color:var(--text);font-family:'DM Sans',sans-serif}
 .inline-add input:focus{outline:none;border-color:var(--blue-mid)}
 .inline-add button{padding:7px 12px;background:var(--blue);color:#fff;border:none;border-radius:8px;cursor:pointer;font-size:13px;font-family:'DM Sans',sans-serif}
-
 .gate-overlay{display:none;position:fixed;inset:0;background:rgba(0,0,0,.35);z-index:200;align-items:center;justify-content:center}
 .gate-overlay.show{display:flex}
 .gate-card{background:var(--surface);border-radius:var(--radius-lg);padding:2rem;width:320px;border:1px solid var(--border)}
@@ -104,7 +88,6 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
 .gate-card button.primary{width:100%;padding:9px;background:var(--blue);color:#fff;border:none;border-radius:8px;font-size:14px;font-weight:500;cursor:pointer;font-family:'DM Sans',sans-serif}
 .gate-err{font-size:12px;color:var(--red);margin-top:4px;display:none}
 .gate-cancel{width:100%;padding:7px;background:transparent;color:var(--text-sec);border:1px solid var(--border);border-radius:8px;font-size:13px;cursor:pointer;font-family:'DM Sans',sans-serif;margin-top:6px}
-
 @media(max-width:600px){
   .metrics{grid-template-columns:1fr 1fr}
   .topbar{padding:0 1rem}
@@ -113,7 +96,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
 </style>
 </head>
 <body>
-
+ 
 <div class="topbar">
   <div class="logo">
     <div class="logo-mark">
@@ -129,7 +112,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
     <button class="mode-btn" id="btn-admin" onclick="openGate()">Admin</button>
   </div>
 </div>
-
+ 
 <div class="gate-overlay" id="gate-overlay">
   <div class="gate-card">
     <div class="gate-title">Acesso administrativo</div>
@@ -140,15 +123,14 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
     <button class="gate-cancel" onclick="closeGate()">Cancelar</button>
   </div>
 </div>
-
+ 
 <div class="page">
-
   <div class="hero">
     <div class="hero-label">Cronograma de execução</div>
     <div class="hero-title">Lei do Bem — Ano-base 2025</div>
     <div class="hero-meta">Up Brasil · Acompanhamento atualizado em tempo real</div>
   </div>
-
+ 
   <div class="metrics">
     <div class="metric-card">
       <div class="metric-label">Progresso</div>
@@ -158,7 +140,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
     <div class="metric-card">
       <div class="metric-label">Etapas concluídas</div>
       <div class="metric-value" id="met-stages">0</div>
-      <div class="metric-sub" id="met-stages-total">de 5 etapas</div>
+      <div class="metric-sub" id="met-stages-total">de 4 etapas</div>
     </div>
     <div class="metric-card">
       <div class="metric-label">Docs pendentes</div>
@@ -166,7 +148,7 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
       <div class="metric-sub">documentos aguardados</div>
     </div>
   </div>
-
+ 
   <div class="progress-wrap">
     <div class="progress-head">
       <span>Progresso geral</span>
@@ -174,23 +156,22 @@ body{background:var(--bg);color:var(--text);min-height:100vh;padding:0}
     </div>
     <div class="track"><div class="fill" id="prog-fill" style="width:0%"></div></div>
   </div>
-
+ 
   <div id="alert-pend" class="alert" style="display:none">
     <div class="alert-dot"></div>
     <span>Existem documentos pendentes que precisam ser enviados.</span>
   </div>
-
+ 
   <div class="stages" id="stages-list"></div>
-
 </div>
-
+ 
 <script>
 const ADMIN_PW = "up2025";
 let isAdmin = false;
-
+ 
 const DATA = [
   {
-    id:1, name:"Coleta de informações", date:"Mar–Abri 2026",
+    id:1, name:"Coleta de informações", date:"Mar–Abr 2026",
     tasks:[
       {id:1,name:"Levantamento de projetos para análise de P&D",status:"pending"},
       {id:2,name:"Levantamento das NFs e timesheet dos projetos",status:"pending"},
@@ -198,27 +179,28 @@ const DATA = [
       {id:4,name:"Levantamento de contratos",status:"pending"}
     ],
     docs:[
-      {id:1,name:"Template de projetos",status:"pending"}
+      {id:1,name:"Template de projetos",status:"pending"},
       {id:2,name:"Timesheet dos projetos",status:"pending"},
-      {id:2,name:"Folha de pagamento",status:"pending"},
-      {id:3,name:"Contratos e demais evidências",status:"pending"}
+      {id:3,name:"Folha de pagamento",status:"pending"},
+      {id:4,name:"Contratos e demais evidências",status:"pending"}
     ],
     note:"Pendente: Aguardando envio da documentação para análise."
   },
-{
+  {
     id:2, name:"Valoração", date:"Abr 2026",
     tasks:[
       {id:1,name:"Cálculo dos dispêndios segundo a análise de risco",status:"pending"},
       {id:2,name:"Apresentação de resultado",status:"pending"}
-      note:""
+    ],
+    docs:[],
+    note:""
   },
-  
   {
     id:3, name:"Elaboração do relatório técnico", date:"Mai 2026",
     tasks:[
-      {id:1,name:"Agrupamento das linhas de pesquisa (se aplicável",status:"pending"},
-      {id:2,name:"Descritivo técnico técnico dos projetos",status:"pending"},
-      {id:3:name:"Descritivo dos dispêndios com RH e terceiros",status:"pending"}
+      {id:1,name:"Agrupamento das linhas de pesquisa (se aplicável)",status:"pending"},
+      {id:2,name:"Descritivo técnico dos projetos",status:"pending"},
+      {id:3,name:"Descritivo dos dispêndios com RH e terceiros",status:"pending"},
       {id:4,name:"Revisão dos descritivos técnicos e de dispêndios",status:"pending"}
     ],
     docs:[
@@ -226,13 +208,12 @@ const DATA = [
     ],
     note:""
   },
-  
-    {
-    id:5, name:"Entrega MCTI", date:"Jul-Ago 2026",
+  {
+    id:4, name:"Entrega MCTI", date:"Jul–Ago 2026",
     tasks:[
-      {id:1,name:"Coleta dos dados de fechamento da empresa | Ano-base 2025",status:"pending"}
+      {id:1,name:"Coleta dos dados de fechamento da empresa | Ano-base 2025",status:"pending"},
       {id:2,name:"Preenchimento do formulário MCTI",status:"pending"},
-      {id:2,name:"Envio e protocolo de confirmação",status:"pending"}
+      {id:3,name:"Envio e protocolo de confirmação",status:"pending"}
     ],
     docs:[
       {id:1,name:"Comprovante de envio ao MCTI",status:"pending"}
@@ -240,34 +221,34 @@ const DATA = [
     note:""
   }
 ];
-
+ 
 function sc(s){
   if(s==="done") return {bg:"var(--green-light)",text:"var(--green)",dot:"var(--green-mid)",label:"Concluído"};
   if(s==="in-progress") return {bg:"var(--blue-light)",text:"var(--blue)",dot:"var(--blue-mid)",label:"Em andamento"};
   return {bg:"var(--gray-light)",text:"var(--gray)",dot:"var(--gray-mid)",label:"Pendente"};
 }
-
+ 
 function stageStatus(s){
   const done=s.tasks.filter(t=>t.status==="done").length;
-  if(done===s.tasks.length) return "done";
+  if(done===s.tasks.length&&s.tasks.length>0) return "done";
   if(done>0||s.tasks.some(t=>t.status==="in-progress")) return "in-progress";
   return "pending";
 }
-
+ 
 function calcProgress(){
   let total=0,done=0;
   DATA.forEach(s=>{s.tasks.forEach(t=>{total++;if(t.status==="done")done++;})});
   return {pct:total?Math.round(done/total*100):0,done,total};
 }
-
+ 
 function pendingDocs(){
   let n=0;DATA.forEach(s=>s.docs.forEach(d=>{if(d.status==="pending")n++;}));return n;
 }
-
+ 
 function doneStages(){
   return DATA.filter(s=>stageStatus(s)==="done").length;
 }
-
+ 
 function updateMetrics(){
   const {pct,done,total}=calcProgress();
   document.getElementById("prog-pct").textContent=pct+"%";
@@ -280,18 +261,18 @@ function updateMetrics(){
   document.getElementById("met-docs").textContent=pd;
   document.getElementById("alert-pend").style.display=pd>0?"flex":"none";
 }
-
+ 
 function render(){
   updateMetrics();
   const list=document.getElementById("stages-list");
   const openIds=Array.from(list.querySelectorAll(".stage-body.open")).map(el=>el.dataset.sid);
   list.innerHTML="";
-
+ 
   DATA.forEach((stage,si)=>{
     const ss=stageStatus(stage);
     const col=sc(ss);
     const wasOpen=openIds.includes(String(stage.id))||(ss==="in-progress"&&openIds.length===0);
-
+ 
     const card=document.createElement("div");
     card.className="stage-card";
     card.innerHTML=`
@@ -314,7 +295,7 @@ function render(){
                 <div class="task-dot" style="background:${tc.dot}"></div>
                 <span class="task-name">${t.name}</span>
                 ${isAdmin
-                  ?`<select class="task-select" style="display:inline-block" onchange="changeTask(${si},${ti},this.value)">
+                  ?`<select style="font-size:12px;padding:3px 7px;border:1px solid var(--border);border-radius:6px;background:var(--surface);color:var(--text);font-family:'DM Sans',sans-serif" onchange="changeTask(${si},${ti},this.value)">
                       <option value="pending"${t.status==="pending"?" selected":""}>Pendente</option>
                       <option value="in-progress"${t.status==="in-progress"?" selected":""}>Em andamento</option>
                       <option value="done"${t.status==="done"?" selected":""}>Concluído</option>
@@ -330,7 +311,8 @@ function render(){
             <input placeholder="Nome da atividade..." id="inp-task-${si}"/>
             <button onclick="addItem('task',${si})">Ok</button>
           </div>`:""}
-
+ 
+          ${stage.docs.length>0||isAdmin?`
           <div class="section-label">Documentos</div>
           <div id="docs-${si}">
             ${stage.docs.map((d,di)=>{
@@ -353,8 +335,8 @@ function render(){
           <div class="inline-add" id="add-doc-${si}">
             <input placeholder="Nome do documento..." id="inp-doc-${si}"/>
             <button onclick="addItem('doc',${si})">Ok</button>
-          </div>`:""}
-
+          </div>`:""}`:``}
+ 
           ${stage.note?`<div class="note-box">${stage.note}</div>`:""}
           ${isAdmin?`<button class="add-btn" style="margin-top:10px" onclick="editNote(${si})">+ observação</button>`:""}
         </div>
@@ -364,17 +346,17 @@ function render(){
     if(wasOpen) document.getElementById("chv-"+si).style.transform="rotate(180deg)";
   });
 }
-
+ 
 function toggleStage(si){
   const b=document.getElementById("body-"+si);
   const c=document.getElementById("chv-"+si);
   b.classList.toggle("open");
   c.style.transform=b.classList.contains("open")?"rotate(180deg)":"rotate(0deg)";
 }
-
+ 
 function changeTask(si,ti,val){DATA[si].tasks[ti].status=val;render();}
 function changeDoc(si,di,val){DATA[si].docs[di].status=val;render();}
-
+ 
 function showAdd(type,si){
   document.getElementById("add-"+type+"-"+si).classList.toggle("show");
 }
@@ -390,14 +372,14 @@ function editNote(si){
   const n=prompt("Observação para esta etapa:",DATA[si].note||"");
   if(n!==null){DATA[si].note=n;render();}
 }
-
+ 
 function setMode(mode){
   document.getElementById("btn-view").classList.toggle("active",mode==="view");
   document.getElementById("btn-admin").classList.toggle("active",mode==="admin");
   isAdmin=(mode==="admin");
   render();
 }
-
+ 
 function openGate(){
   document.getElementById("gate-overlay").classList.add("show");
   setTimeout(()=>document.getElementById("pw-input").focus(),100);
@@ -419,7 +401,7 @@ function checkPw(){
     document.getElementById("pw-err").style.display="block";
   }
 }
-
+ 
 render();
 </script>
 </body>
