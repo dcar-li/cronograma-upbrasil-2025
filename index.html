@@ -190,60 +190,48 @@ let isAdmin = false;
 
 const DATA = [
   {
-    id:1, name:"Diagnóstico inicial", date:"Jan–Fev 2025",
+    id:1, name:"Coleta de informações", date:"Mar–Abri 2026",
     tasks:[
-      {id:1,name:"Reunião de kickoff com equipe técnica",status:"done"},
-      {id:2,name:"Mapeamento dos projetos de P&D",status:"done"},
-      {id:3,name:"Definição do escopo tecnológico",status:"done"}
+      {id:1,name:"Levantamento de projetos para análise de P&D",status:"pending"},
+      {id:2,name:"Levantamento das NFs e timesheet dos projetos",status:"pending"},
+      {id:3,name:"Coleta dos dados de RH",status:"pending"},
+      {id:4,name:"Levantamento de contratos",status:"pending"}
     ],
     docs:[
-      {id:1,name:"Formulário de projetos preenchido",status:"done"},
-      {id:2,name:"Lista de colaboradores envolvidos em P&D",status:"done"}
+      {id:1,name:"Template de projetos",status:"pending"}
+      {id:2,name:"Timesheet dos projetos",status:"pending"},
+      {id:2,name:"Folha de pagamento",status:"pending"},
+      {id:3,name:"Contratos e demais evidências",status:"pending"}
     ],
-    note:"Etapa concluída. Todos os projetos foram mapeados e validados com a equipe."
+    note:"Pendente: Aguardando envio da documentação para análise."
   },
-  {
-    id:2, name:"Coleta de informações", date:"Mar–Mai 2025",
+{
+    id:2, name:"Valoração", date:"Abr 2026",
     tasks:[
-      {id:1,name:"Levantamento de despesas com P&D",status:"done"},
-      {id:2,name:"Coleta de fichas de registro de ponto",status:"in-progress"},
-      {id:3,name:"Levantamento de contratos com ICTs",status:"pending"}
-    ],
-    docs:[
-      {id:1,name:"Planilha de horas por colaborador",status:"pending"},
-      {id:2,name:"Contracheques — equipe técnica",status:"done"},
-      {id:3,name:"Notas fiscais de insumos e materiais",status:"pending"}
-    ],
-    note:"Aguardando envio da planilha de horas e notas fiscais."
+      {id:1,name:"Cálculo dos dispêndios segundo a análise de risco",status:"pending"},
+      {id:2,name:"Apresentação de resultado",status:"pending"}
+      note:""
   },
+  
   {
-    id:3, name:"Elaboração do relatório técnico", date:"Jun–Jul 2025",
+    id:3, name:"Elaboração do relatório técnico", date:"Mai 2026",
     tasks:[
-      {id:1,name:"Redação dos memoriais descritivos",status:"pending"},
-      {id:2,name:"Revisão técnica interna",status:"pending"},
-      {id:3,name:"Aprovação pelo responsável técnico",status:"pending"}
+      {id:1,name:"Agrupamento das linhas de pesquisa (se aplicável",status:"pending"},
+      {id:2,name:"Descritivo técnico técnico dos projetos",status:"pending"},
+      {id:3:name:"Descritivo dos dispêndios com RH e terceiros",status:"pending"}
+      {id:4,name:"Revisão dos descritivos técnicos e de dispêndios",status:"pending"}
     ],
     docs:[
-      {id:1,name:"Memorial descritivo assinado",status:"pending"}
+      {id:1,name:"Memorial técnico-financeiro das linhas de pesquisa elaboradas",status:"pending"}
     ],
     note:""
   },
-  {
-    id:4, name:"Escrituração contábil", date:"Ago–Set 2025",
+  
+    {
+    id:5, name:"Entrega MCTI", date:"Jul-Ago 2026",
     tasks:[
-      {id:1,name:"Registro das despesas no LALUR",status:"pending"},
-      {id:2,name:"Validação com contador responsável",status:"pending"}
-    ],
-    docs:[
-      {id:1,name:"LALUR com ajuste Lei do Bem",status:"pending"},
-      {id:2,name:"ECF — formulários 73 e 74 preenchidos",status:"pending"}
-    ],
-    note:""
-  },
-  {
-    id:5, name:"Entrega MCTI", date:"Out–Nov 2025",
-    tasks:[
-      {id:1,name:"Preenchimento do formulário MCTI",status:"pending"},
+      {id:1,name:"Coleta dos dados de fechamento da empresa | Ano-base 2025",status:"pending"}
+      {id:2,name:"Preenchimento do formulário MCTI",status:"pending"},
       {id:2,name:"Envio e protocolo de confirmação",status:"pending"}
     ],
     docs:[
